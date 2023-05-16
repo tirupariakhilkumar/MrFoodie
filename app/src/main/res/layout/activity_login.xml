@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrfoodie.LoginActivity"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Enter Your Email"
+        android:textColorHint="#ffffff"
+        android:layout_margin="15dp"
+        android:id="@+id/editText_email"
+        android:layout_below="@+id/textview1"
+        android:theme="@style/ThemeEditTextLight"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter Your Password"
+        android:textColor="#ffffff"
+        android:layout_margin="15dp"
+        android:textColorHint="#ffffff"
+        android:id="@+id/editText_password"
+        android:layout_below="@+id/editText_email"
+        android:theme="@style/ThemeEditTextLight"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Here to Login"
+        android:id="@+id/button_login"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editText_password"
+        android:background="#03A9F4" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="NOT LOG-IN ? SIGN UP FROM HERE"
+        android:background="#03A9F4"
+        android:id="@+id/button_SignUP"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button_login"/>
+
+</RelativeLayout>

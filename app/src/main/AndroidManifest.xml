@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mrfoodie">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/foodie"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/foodie"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Welcome"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".Order_Type" >
+        </activity>
+        <activity android:name=".Starters" >
+        </activity>
+        <activity android:name=".Veg" >
+        </activity>
+        <activity android:name=".N_Veg" >
+        </activity>
+        <activity android:name=".Dessert" >
+        </activity>
+
+        <activity
+            android:name=".finalize_order"
+            android:label="@string/title_activity_finalize_order" >
+        </activity>
+        <activity
+            android:name=".thankyou"
+            android:label="@string/title_activity_thankyou" >
+        </activity>
+
+    </application>
+
+</manifest>
